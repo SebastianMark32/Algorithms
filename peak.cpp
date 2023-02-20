@@ -1,13 +1,15 @@
-/***********************************************
- * This program finds the peak value for a
- * given array. Depending on the array structure
- * there can be more than one peak.
- *
- * @author Sebastian Mark
- * CSCI 3200 Algorithms
- * Professor Hamid
- * ********************************************/
+/************************************************
+ * This program finds the peak value for a       *
+ * given array. Depending on the array structure *
+ * there can be more than one peak.              *
+ *                                               *
+ * @author Sebastian Mark  
+ * 
+ * CSCI 3200 Algorithms                          *
+ * Professor Hamid                               *
+ * ***********************************************/
 
+#include <algorithm>
 #include <iostream>
 
 void findingPeak(int arraySize, int array[]) {
@@ -35,18 +37,19 @@ void findingPeak(int arraySize, int array[]) {
       totalPeaks++;
     }
   }
+
   // printing total number of peaks
   result = totalPeaks;
   std::cout << "Total peaks = " << result << std::endl;
 }
 
 int main() {
-
+  
   std::cout << "*****************Testcase One***********" << std::endl;
   int array[] = {10, 5, 7, 3, 3, 2, 5, 4};
   int size = sizeof(array) / sizeof(array[0]);
   findingPeak(size, array);
-
+  
   std::cout << "******************Testcase Two************" << std::endl;
   int arrayTwo[] = {1, 2, 1};
   int sizeTwo = sizeof(arrayTwo) / sizeof(arrayTwo[0]);
