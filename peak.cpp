@@ -3,8 +3,9 @@
  * given array. Depending on the array structure *
  * there can be more than one peak.              *
  *                                               *
- * @author Sebastian Mark  
- * 
+ *                                               *
+ * @author Sebastian Mark                        *
+ *                                               *
  * CSCI 3200 Algorithms                          *
  * Professor Hamid                               *
  * ***********************************************/
